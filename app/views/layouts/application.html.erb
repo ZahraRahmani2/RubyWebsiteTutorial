@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Ruby_Tutorial_Website/css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="Ruby_Tutorial_Website/css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="Ruby_Tutorial_Website/css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="Ruby_Tutorial_Website/css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="Ruby_Tutorial_Website/css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="Ruby_Tutorial_Website/style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <title>RubyTutorialWebsite</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
 
-  <body>
+<body class="courses-page">
+
+  <%= render 'home/header' %>
+
     <%= yield %>
-  </body>
+
+ <%= render 'home/footer' %>
+
+ 
+
+    <script type='text/javascript' src='Ruby_Tutorial_Website/js/jquery.js'></script>
+    <script type='text/javascript' src='Ruby_Tutorial_Website/js/swiper.min.js'></script>
+    <script type='text/javascript' src='Ruby_Tutorial_Website/js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='Ruby_Tutorial_Website/js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='Ruby_Tutorial_Website/js/custom.js'></script>
+
+</body>
 </html>
